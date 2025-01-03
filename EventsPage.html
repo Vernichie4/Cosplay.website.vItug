@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Home_P.css">
+    <title>Events - Cosplay Website</title>
+
+</head>
+<body>
+    <nav role="navigation">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar" aria-hidden="true">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="HomePage.html">Home</a>
+            <a href="EventsPage.html">Events</a>
+            <a href="ContactPage.html">Contact</a>
+            <a href="CommissionsPage.html">Commission</a>
+        </div>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <span class="openbtn" onclick="openNav()" aria-label="Open sidebar">&#9776;</span>
+            <div>
+                <a href="HomePage.html">Home</a>
+                <a href="EventsPage.html">Events</a>
+                <a href="ContactPage.html">Contact</a>
+                <a href="CommissionsPage.html">Commission</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="portrait-container">
+        <!-- Back Button -->
+        <a href="javascript:history.back()" style="text-decoration: none; color: #000; font-size: 16px;">&#8592; Back</a>
+        <div class="event-container">
+            <h1 style="text-align: center;">🌈EVENTS✔️</h1>
+            <hr>
+           <h3>Otaku Musika Festival Christmas Edition</h3>
+           <p><i>2024-12-27 – 2024-12-29 </i><br>
+           Robinsons Novaliches, Quirino Hwy, Novaliches, Quezon City, 63011 Metro Manila, Philippines</p>
+           <hr>
+
+           <h3>Cosplay Matsuri 2024</h3>
+           <p><i>2024-12-28 – 2024-12-30</i><br>
+           SMX Convention Center Manila, Mall of Asia Complex, Seashell Ln, Pasay, 1300 Metro Manila, Philippines</p>
+           <p>Function Rooms 2-5</p>
+           <hr>
+
+           <h3>Power Up Your Hero Con 2025</h3>
+           <p><i>2025-01-10 – 2025-01-12</i> <br>
+           Market! Market!, McKinley Pkwy, Taguig, Metro Manila, Philippines</p>
+           <hr>
+        </div>
+    </div>
+
+    <!-- Floating Button -->
+    <button class="chatbot-button" onclick="toggleChat()" aria-label="Open chat">💬</button>
+
+    <!-- Chat Container -->
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">Luce's Chatbot</div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask me about cosplay, events, or commissions!">
+            <button onclick="sendMessage()" aria-label="Send message">Send</button>
+        </div>
+    </div>
+
+    <script src="Coser.js"></script>
+</body>
+</html>

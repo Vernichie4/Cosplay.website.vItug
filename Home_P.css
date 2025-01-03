@@ -1,0 +1,328 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url("Designer.jpeg");
+    background-size: cover;
+    background-position: center;
+    }
+    
+    button {
+    font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 5px 15px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+    
+    .navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    }
+    
+    .navbar a:hover {
+    background-color: #ddd;
+    color: #000;
+    border-radius: 5px;
+    }
+    
+    .menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    }
+    
+    .menu-icon:hover {
+    background-color: #444;
+    }
+    
+    .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: width 0.3s;
+    padding-top: 60px;
+    }
+    
+    .sidebar a {
+    padding: 8px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: color 0.3s;
+    }
+    
+    .sidebar a:hover {
+    color: #f1f1f1;
+    }
+    
+    .cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 11px;
+    }
+    
+    .portrait-container, .content {
+    padding: 15px;
+    text-align: center;
+    }
+    
+    .buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #481d1d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #888888;
+    cursor: pointer;
+    width: 150px;
+    }
+    
+    .buttons button:hover {
+    background-color: #321414;
+    }
+    
+    .portrait-container {
+    margin: 8px auto;
+    width: 100%;
+    max-width: 680px;
+    padding: 18px;
+    background-color: rgb(241, 218, 222);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+    width: 90%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.625rem;
+    font-size: 1rem;
+    color: #333;
+    background-color: var(--input-bg-color);
+    transition: all 0.3s ease-in-out;
+    margin: 0.5rem 0;
+    border-style: dashed;
+    border-color: #481d1d;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+    outline: none;
+    border-color: #481d1d;
+    box-shadow: 0 0 8px black;
+    background-color: pink;
+    }
+    
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .contact-form button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #481d1d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px #888888;
+    cursor: pointer;
+    width: 150px;
+    }
+    
+    .contact-form button:hover {
+    background-color: #321414;
+    }
+    
+    .contact-form label {
+    text-align: start;
+    display: block; /* Ensure labels are block elements for alignment */
+    margin-bottom: 5px; /* Add spacing between label and input/textarea */
+    }
+    
+    .facebook {
+    background-image: url('facebook-brands-solid.svg');
+    background-size: cover;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    filter: hue-rotate(210deg);
+    }
+    
+    .social-icon {
+    width: 45px;
+    height: 45px;
+    transition: filter 0.3s ease;
+    filter: grayscale(1);
+    }
+    
+    .social-icon:hover {
+    filter: hue-rotate(210deg);
+    }
+    
+    .portrait-container, .event-container {
+    text-align: justify;
+    padding: 1px, 18px;
+    }
+
+.commission-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+        text-align: left;
+        border-radius: 10px;
+        overflow: hidden; /* Ensures the rounded corners are visible */
+        border: 2px dashed #481d1d; /* Adds dashed borders to the table */
+    }
+    
+    .commission-table th, .commission-table td {
+        padding: 12px 15px;
+    }
+    
+    .commission-table th {
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    .commission-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    
+    .commission-table tr:hover {
+        background-color: #f1f1f1;
+    }
+    
+            /* Chatbot styles */
+            .chat-container {
+                position: fixed;
+                bottom: 80px;
+                right: 20px;
+                width: 350px;
+                height: 500px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                display: none;
+                flex-direction: column;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                z-index: 1000;
+            }
+    
+            .chat-header {
+                background-color: rgb(241, 218, 222);
+                color: black;
+                padding: 10px;
+                text-align: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+    
+            .chat-messages {
+                flex: 1;
+                padding: 10px;
+                overflow-y: auto;
+                background-color: #f9f9f9;
+            }
+    
+            .message {
+                margin: 5px 0;
+                padding: 10px;
+                border-radius: 8px;
+            }
+    
+            .bot-message {
+                background-color: #e0e0e0;
+                align-self: flex-start;
+            }
+    
+            .user-message {
+                background-color: #6200ea;
+                color: white;
+                align-self: flex-end;
+            }
+    
+            .chat-input {
+                display: flex;
+                padding: 10px;
+                border-top: 1px solid #ccc;
+                background-color: #fff;
+            }
+    
+            .chat-input input {
+                flex: 1;
+                padding: 10px;
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+    
+            .chat-input button {
+                margin-left: 10px;
+                padding: 10px 20px;
+                background-color: #481d1d;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            .chat-input button:hover {
+                background-color: #4500b5;
+            }
+    
+            .chatbot-button {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background-color: #481d1d;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                font-size: 24px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1000;
+            }
+    
+            .chatbot-button:hover {
+                background-color: #4500b5;
+            }
